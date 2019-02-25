@@ -1,0 +1,3 @@
+-Place idlelogoff.exe in C:\
+-Place IDLELOGOFF.BAT in C:\Windows\System32\GroupPolicy\User\Scripts\Logon
+-Add IDLELOGOFF.BAT to logon scripts in group policy

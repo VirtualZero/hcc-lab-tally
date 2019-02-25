@@ -1,2 +1,6 @@
-# hcc-lab-tally
-Created for the Hillsoborough Community College Computer Science Department, CompuTally efficiently parses student computer activity data resulting in an organized list of busiest times in decreasing order.
+# CompuTally_1.03
+
+Created for administrative use at Hillsoborough Community College Computer Science Department, CompuTally efficiently parses student computer activity data resulting in an organized list of busiest times in decreasing order.
+
+CompTally contains multiple parts, all working in unison. The logon and logoff scripts are deployed to every computer in a lab or classroom setting. These scripts write the pertinent user information (computer name, Net ID, date, logon time, logoff time) 
+to the SessionLog.txt located on a network share. Another script, IdleLogoff, ensures that students are logged out of computers when they finish working, even if the students forget to log out. This helps to keep the data reasonably accurate. CompuTally's main program, computally.py, parses the SessionLog.txt, sorting the data by days into individual .txt files, then counts or "tallies" which hours each student was active on the computer that he or she was using. The end result is a .txt file for each day sorted from most-active hours to least-active hours with the tally of active students for each hour. This helps with staffing and scheduling as management can easily discern between peak times and slow times. The data provided from CompuTally is also an invaluable resource for college administrators who need to show hard data to superiors. 

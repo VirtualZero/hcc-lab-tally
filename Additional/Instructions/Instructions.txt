@@ -1,0 +1,25 @@
+1. Install Python 3.6.2
+	-When installer pops up, check the box for "Add to Path"
+	-Click customize install
+	-Check the box for "Install for all users"
+2. Open PowerShell(admin) and execute:
+	Dism.exe /online /Import-DefaultAppAssociations:\\DTEC462-GHOST-3\Headcount\AppAssoc.xml
+3. Access Group Policy:
+	-Windows Settings > Scripts (Logon/Logoff)
+	-Double click Logon
+	-Click "Show Files"
+	-Add Logon.py to the location
+	-Exit File Explorer and click OK on Logon pop up
+	
+	-Double click Logoff
+	-Click "Show Files"
+	-Add Logoff.py to the location
+	-Exit File Explorer and click "Add" on Logoff pop up
+	-Double click the "Logoff.py" file
+	-Click "Apply" then "OK" on the Logoff pop up
+4. Navigate to Group Policy > Administrative Templates > System > Logon
+	-Double click "Run these programs at user logon"
+	-Click box for "Enabled"
+	-Click "Show" button 
+	-For "Value" enter this:
+	C:\Windows\System32\GroupPolicy\User\Scripts\Logon\Logon.py

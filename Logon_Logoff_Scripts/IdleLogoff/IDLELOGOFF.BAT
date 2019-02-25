@@ -1,0 +1,1 @@
+start /min C:\idlelogoff.exe 1800 logoff
